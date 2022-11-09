@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>Clientes</title>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+		crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="../css/ClienteDashboard.css"></link>
+
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+		rel='stylesheet'></link>
+	<link rel="stylesheet" href="../css/Style.css"></link>
+
+
+</h:head>
+<h:body>
+
+	<nav class="sidebar close"> <header>
+	<div class="image-text">
+		<span class="image"> <img src="../img/LOGOARTEMISA SYSTEM.jpeg"
+			alt=""></img>
+		</span>
+
+
+	</div>
+
+	<i class='bx bx-chevron-right toggle'></i> </header>
+
+	<div class="menu-bar">
+		<div class="menu">
+
+			<li class="search-box"><i class='bx bx-search icon'></i> <input
+				type="text" placeholder="Search..."></input></li>
+
+			<ul class="menu-links">
+				<li class="nav-link"><a href="DashboardInicio.xhtml"> <i
+						class='bx bx-home-alt icon'></i> <span class="text nav-text">Home</span>
+				</a></li>
+				<li class="nav-link"><a href="#"> <i
+						class='bx bx-bell icon'></i> <span class="text nav-text">Visitas</span>
+				</a></li>
+
+
+				<li class="nav-link"><a href="DashboardCliente.xhtml"> <i
+						class='bx bx-bar-chart-alt-2 icon'></i> <span
+						class="text nav-text">Catálogo</span>
+				</a></li>
+				<!-- Example split danger button -->
+				<li>
+					<div class="btn-group">
+						<h3><i class='bx bx-book-reader icon' style="margin-top:20px;"><span class="text nav-text" style="margin-left:10px;">Categorias</span></i></h3>
+						
+							<li><a class="dropdown-item" href="#" style="margin-top:20px;"><i class='bx bx-male icon' ></i><span class="text nav-text" >Hombre</span>
+							</a></li>
+							<li><a class="dropdown-item" href="DashboardMujeres.xhtml" style="margin-top:20px;"><i class='bx bx-female icon'></i><span class="text nav-text">Mujer</span>
+							</a></li>
+						
+					</div>
+				</li>
+
+			</ul>
+			<div class="bottom-content">
+			<li class=""><a href="#"> <i class='bx bx-log-out icon'></i>
+					<span class="text nav-text">Logout</span>
+			</a></li>
+
+			<li class="mode">
+				<div class="sun-moon">
+					<i class='bx bx-moon icon moon'></i> <i class='bx bx-sun icon sun'></i>
+				</div> <span class="mode-text text">Modo Oscuro</span>
+
+				<div class="toggle-switch">
+					<span class="switch"></span>
+				</div>
+			</li>
+
+		</div>
+		</div>
+
+
+		
+	</div>
+
+	</nav>
+
+
+	<section class="home" >
+
+	<div class="container-fluid justify-content-center">
+
+
+		<div class="fondo">
+
+			<br></br>
+
+
+			<div class="row mt-3 justify-content-around">
+
+			<div class="container">
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card1" style="width: 18rem;">
+							<img src="../img/vestido_verde.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido: A-1</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido de Gala <br>Género: Femenino</br> <br>Evento:
+										Coctel, Gala</br>
+										 <br>Disponibilidad: Alquiler</br> <br>Talla:
+										S,M,L</br> <br>Color Principal: Verde</br> <br>Precio: $70000</br>
+									<br>Medidas: 150 cm Alto, 70 cm Ancho</br> <br>Observaciones:
+										Vestido para coteles</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 	<div class="tarjeta2"> -->
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card2" style="width: 18rem;">
+							<img src="../img/vestidomujermorado.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido: A-2</h5>
+								<p class="card-text">
+									Nombre Vestido:Vertino de boda <br>Género:Femenino </br> <br>Evento:
+										Formal</br> <br>Disponibilidad:Venta </br> <br>Talla: S,M,L,XL</br>
+									<br>Color Principal:Morado </br> <br>Precio: $950000</br> <br>Medidas:172cm
+										Alto, 60 cm Ancho</br> <br>Observaciones: Vestido para toda
+										ocacion</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- </div> -->
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card3" style="width: 18rem;">
+							<img src="../img/vestidomatr.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido: A-3</h5>
+								<p class="card-text">
+									Nombre Vestido: V Matrimonio <br>Género: Femenino</br> <br>Evento:
+										Matrimonio</br> <br>Disponibilidad: Venta</br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Blanco</br> <br>Precio:
+										$950000</br> <br>Medidas: 145 cm Alto, 65 cm Ancho</br> <br>Observaciones:
+										Vestido de matrimonio</br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card1" style="width: 18rem; margin-top: 50px;">
+							<img src="../img/trejehombreazul1.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:B-1</h5>
+								<p class="card-text">
+									<br>Nombre Vestido: Traje Azul</br>
+									 <br>Género: Hombre </br>
+									  <br>Evento:Gala </br> 
+									  <br>Disponibilidad:</br> 
+									  <br>Talla: S,M,L,XL</br> 
+									  <br>Color Principal: </br> 
+									  <br>Precio: $550000</br>
+									   <br>Medidas: 180 cm Alto, 70 cm de Ancho</br>
+										 <br>Observaciones:</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card2" style="width: 18rem; margin-top: 50px;">
+							<img src="../img/vestidohombre.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:B-2</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido Matrimonio <br>Género: Masculino</br> <br>Evento:
+										Coctel, Gala, Matrimonio</br> <br>Disponibilidad: Alquiler</br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Azul</br> <br>Precio:
+										$905000</br> <br>Medidas: 170 cm Alto, 70 cm Ancho</br> <br>Observaciones:
+										Traje con corbata negra</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card3" style="width: 18rem; margin-top: 50px;">
+							<img src="../img/trejehombreazul2.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:B-3</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido Gala <br>Género: Hombre </br> <br>Evento:
+										Coctel, Matrimonio </br> <br>Disponibilidad: NOventa </br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Azul </br> <br>Precio:
+										$95000</br> <br>Medidas: 166 cm Alto, 50 cm Ancho</br> <br>Observaciones:</br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card1" style="width: 18rem; margin-top: 60px;">
+							<img src="../img/vestidorojo.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:A-4</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido Coctel <br>Género: Femenino </br> <br>Evento:
+										Gala, Matrimonio, Coctel</br> <br>Disponibilidad: Venta </br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Rojo </br> <br>Precio:
+										$550000</br> <br>Medidas: 180 cm Alto, 68 cm de Ancho</br> <br>Observaciones:</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card2" style="width: 18rem; margin-top: 60px;">
+							<img src="../img/vestidonatrimonio.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:A-5</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido Matrimonio <br>Género: Femenino </br> <br>Evento:
+										Matrimonio</br> <br>Disponibilidad: Venta </br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Blanco </br> <br>Precio:
+										$905000</br> <br>Medidas: 160 cm Alto, 70 cm Ancho</br> <br>Observaciones:
+										Vestido con corbata negra</br>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 d-flex justify-content-center mb-2">
+						<div class="card3" style="width: 18rem; margin-top: 60px;">
+							<img src="../img/vestidonegro.jpeg" height="300px"
+								class="card-img-top" alt="" />
+							<div class="card-body text-center">
+								<h5 class="card-title">Referencia Vestido:A-6</h5>
+								<p class="card-text">
+									Nombre Vestido: Vestido Gala <br>Género: Femenino </br> <br>Evento:
+										Coctel, Matrimonio </br> <br>Disponibilidad: NOventa </br> <br>Talla:
+										S,M,L,XL</br> <br>Color Principal: Negro </br> <br>Precio:
+										$95000</br> <br>Medidas: 166 cm Alto, 50 cm Ancho</br> <br>Observaciones:</br>
+								</p>
+							</div>
+						</div>
+					</div>
+				
+
+</div>
+
+
+
+
+
+	</section>
+
+
+
+	<script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Modo Claro";
+    }else{
+        modeText.innerText = "Modo Oscuro";
+        
+    }
+});
+    </script>
+
+</h:body>
+</html>

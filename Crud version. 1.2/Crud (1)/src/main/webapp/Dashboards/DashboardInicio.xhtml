@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>Clientes</title>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+		crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="../css/ClienteDashboard.css"></link>
+
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+		rel='stylesheet'></link>
+	<link rel="stylesheet" href="../css/Style.css"></link>
+
+
+</h:head>
+<h:body>
+
+	<nav class="sidebar close"> <header>
+	<div class="image-text">
+		<span class="image"> <img src="../img/LOGOARTEMISA SYSTEM.jpeg"
+			alt=""></img>
+		</span>
+
+
+	</div>
+
+	<i class='bx bx-chevron-right toggle'></i> </header>
+
+	<div class="menu-bar">
+		<div class="menu">
+
+			<li class="search-box"><i class='bx bx-search icon'></i> <input
+				type="text" placeholder="Search..."></input></li>
+
+			<ul class="menu-links">
+				<li class="nav-link"><a href="#"> <i
+						class='bx bx-home-alt icon'></i> <span class="text nav-text">Home</span>
+				</a></li>
+				<li class="nav-link"><a href="#"> <i
+						class='bx bx-bell icon'></i> <span class="text nav-text">Visitas</span>
+				</a></li>
+
+
+				<li class="nav-link"><a href="DashboardCliente.xhtml"> <i
+						class='bx bx-bar-chart-alt-2 icon'></i> <span
+						class="text nav-text">Catálogo</span>
+				</a></li>
+				<!-- Example split danger button -->
+				<li>
+					<div class="btn-group">
+						<h3>
+							<i class='bx bx-book-reader icon' style="margin-top: 20px;"><span
+								class="text nav-text" style="margin-left: 10px;">Categorias</span></i>
+						</h3>
+
+						<li><a class="dropdown-item" href="#"
+							style="margin-top: 20px;"><i class='bx bx-male icon'></i><span
+								class="text nav-text">Hombre</span> </a></li>
+						<li><a class="dropdown-item" href="DashboardMujeres.xhtml"
+							style="margin-top: 20px;"><i class='bx bx-female icon'></i><span
+								class="text nav-text">Mujer</span> </a></li>
+
+					</div>
+				</li>
+
+			</ul>
+			<div class="bottom-content">
+				<li class=""><a href="#"> <i class='bx bx-log-out icon'></i>
+						<span class="text nav-text">Logout</span>
+				</a></li>
+
+				<li class="mode">
+					<div class="sun-moon">
+						<i class='bx bx-moon icon moon'></i> <i class='bx bx-sun icon sun'></i>
+					</div> <span class="mode-text text">Modo Oscuro</span>
+
+					<div class="toggle-switch">
+						<span class="switch"></span>
+					</div>
+				</li>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+	</nav>
+	<section class="home">
+	<div class="container-fluid justify-content-center">
+
+
+		<div class="fondo">
+
+			<br></br>
+
+
+			<div class="row mt-3 justify-content-around">
+
+				<!-- Tarjeta 1 -->
+				<div class="col-3 mt-3 ">
+					<div class="card Tarjeta1 shadow p-2 md-5 rounded">
+						<img src="img/vtavestidos.jpg" alt=""></img>
+						<div class="card-body">
+							<h4>Venta y Alquiler</h4>
+							<p>Ya sea por un tiempo parcial, o para quedartelo, ven y
+								escoge tu vestido.</p>
+						</div>
+						<!-- Color de fondo de tarjeta - cuerpo de información  -->
+					</div>
+				</div>
+
+				<!-- Tarjeta 2 -->
+				<div class="col-4">
+					<div class="card shadow p-2 md-5 rounded Tarjeta2 ">
+						<!-- 1. Encabezado -->
+						<div class="card-header ">
+							<h4>Catálogo</h4>
+						</div>
+						<img src="img/Traje.jpg" alt=""></img>
+						<!-- 2.Cuerpo de la targeta -->
+						<div class="card-body justify-content-center">
+
+							<!-- 		<div class="row mt-3">
+		                <div class="col"> -->
+							<div>
+								<li data-target="#Imagen"></li>
+
+								<div>
+									<ol>
+										<img src="../img/carrusel0.jpg" class="d-block w-100"
+											alt="..."></img>
+										<div class="carousel-caption d-none d-md-block"></div>
+									</ol>
+								</div>
+
+
+							</div>
+
+
+
+						</div>
+						<!-- 3. pie de página  -->
+						<div class="card-footer ">
+							<p>Consulta nuestra variedad en vestidos para tus eventos.</p>
+							<a href="DashboardCliente.xhtml"
+								class="btn btn-outline-dark btn-sm"> Ver más</a>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Color de fondo de tarjeta - cuerpo de información  -->
+
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Modo Claro";
+    }else{
+        modeText.innerText = "Modo Oscuro";
+        
+    }
+});
+    </script>
+</h:body>
+</html>

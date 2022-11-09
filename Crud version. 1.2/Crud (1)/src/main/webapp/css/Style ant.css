@@ -1,0 +1,116 @@
+/*nav img{
+    width: 10%;
+    height: 15%;
+}
+*/
+
+nav {
+    background-color: black;
+
+} 
+
+.piepagina {
+    background-color: #F0C6DB;
+}
+
+
+.fondo { 
+     background-image: url("../img/pasarela.jpg");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color:#464646;
+     height: 1000px;
+} 
+
+.carousel>.carousel-inner>.carousel-item>img{
+    height: 500px;
+    width: 70%;
+}
+
+div>.card{
+    justify-content: around;
+    padding-top: 10px;
+}
+
+#texto1 {
+    font-family: "Verdana";
+}
+
+
+.Formulario {
+    background-color: white;
+    
+}
+
+
+#Rol {
+    text-align: center;
+}
+
+
+#Rol img {
+    height: 130px;
+    width: 110px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+#ListaDash ul {
+    list-style: none;
+}
+
+#ListaDash ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#ListaDash ul li a:hover {
+    background: skyblue;
+    color: black;
+}
+
+
+#avatarfem{
+    height: 50%;
+    width: 50%;
+
+}
+
+.TituloForm { 
+    font-size: 35px;  
+     color: white; text-shadow: black 0.1em 0.1em 0.2em
+}    
+
+
+form label { 
+    font-size: 22px; color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em 
+}    
+
+.barranav li a { 
+     color: black; text-shadow: black 0.1em 0.1em 0.2em 
+}    
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link:focus,
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #B93DDE;
+
+}
+
+.colorsubt {
+  color: #B93DDE;
+}
+
+/*.col{
+    border: 5px solid black;
+ }   
+
+ .row{
+    border: 5px solid green;
+ }   */

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <Link rel="stylesheet" href="css/Style.css"></Link>
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <title>Artemisa - Visualización Solicitudes</title>
+</head>
+<body>
+
+ <header>   
+   
+    <div class="container-fluid"> 
+
+         <!-- primera fila -->
+        <div class="row nav  ">
+        	<div class="col">
+        		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+        			<a class="navbar-brand TituloNav" href="#">
+                        <img src="img/LOGOARTEMISA SYSTEM.jpeg" width="120" height="70" alt="">
+                    </a>
+        				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#BarraNaveg" aria-controls="BarraNaveg" aria-expanded="false" aria-label="Toggle navigation">
+        						<span class="navbar-toggler-icon"></span>
+        						
+        				</button>
+                        <div class="collapse navbar-collapse justify-content-end" id="BarraNaveg">
+                            <ul class ="navbar-nav mx-lb">
+                             <li class="nav-item active">
+                          
+                                   <a class="nav-link text-dark"  data-toggle="modal" data-target="#NuevoUsuarioModal" data-whatever="@getbootstrap" href="#"><i class="fas fa-user-plus"></i>  Crear Nuevo Usuario</a> 
+
+                              </li>
+
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="Index.html"><i class="fas fa-sign-out-alt"></i>  Cerrar Sesión</a>
+                              </li>
+                            </ul>
+                        </div>
+                 </nav>
+            </div>
+        </div>
+    </div>
+ </header>   
+
+
+<div class="modal fade" id="NuevoUsuarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+   <form class="needs-validation" novalidate action="IndexDashBoard.html">
+     
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registrar Nuevo Usuario</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-dark">Nombre Completo</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipient-name" required>
+                <div class="invalid-tooltip">
+                    Digite un nombre completo del usuario
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-dark">Nro Identificacion</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="recipient-name" required>
+                <div class="invalid-tooltip">
+                    Digite un número de identificación válido
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-dark">Usuario/Email</label>
+            <div class="input-group">
+                <input type="email" class="form-control" id="recipient-name" required>
+                <div class="invalid-tooltip">
+                    Digite un email válido
+                </div>
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label for="message-text" class="col-form-label text-dark">Contraseña</label>
+            <div class="input-group">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                <div class="invalid-tooltip">
+                    Digite una contraseña
+                </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+         <button class="btn btn-success" type="submit">Registrar</button>
+      </div>
+      </form>
+    </div>
+    </div>
+    </div>
+
+
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function() {
+                              'use strict';
+                              window.addEventListener('load', function() {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function(form) {
+                                  form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                      event.preventDefault();
+                                      event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                  }, false);
+                                });
+                              }, false);
+                            })();
+                        </script>
+
+        <!-- fila2, dos col. izq=barra vert, derechcontenido-->
+ <div class="container-fluid"> 
+      <div class="fondo2">
+
+        <div class="row justify-content-center">
+            <div class="col-md-2" >
+
+                <nav class="navbar d-md-block collapse navbar-dark " id="menu">
+                    <div class="rol pt-4 " align="center">
+                        <img id="avatarfem" src="img/avatarfem.jpg" class= "...." alt="rol admin">
+                        <p class="text-white"><b class="colorsubt">Carolina Umaña</b><br>Administrador<br><a href="Reportes-Graficos.html"i class="fas fa-home"></i>  Principal</a></p>
+                    </div>
+
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">INVENTARIO</h5>
+                         <li class="nav-item"><a href="ConsultaVestidos.html" class="nav-link"><i class="far fa-list-alt"></i> Lista de Vestidos</a></li>
+                         <li class="nav-item"><a href="RegistroVestidos.html" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de Vestidos</a></li>
+                         <li class="nav-item"><a href="BusquedaVestidos.html" class="nav-link"><i class="fas fa-search"></i> Búsqueda de Vestidos</a></li>
+                    </ul>
+
+                    <ul class ="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">VENTAS</h5>
+                        <li class ="nav-item"><a href="ConsultaVentas.html" class="nav-link"><i class="far fa-list-alt"></i> Consulta de Ventas</a></li>
+                        <li class ="nav-item"><a href="RegistroVenta.html" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de Ventas</a></li>
+                        <li class ="nav-item"><a href="BusquedaVentas.html" class="nav-link"><i class="fas fa-search"></i> Búsqueda de Ventas</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">ALQUILER</h5>
+                        <li class ="nav-item"><a href="ConsultaAlquiler.html" class="nav-link"><i class="far fa-list-alt"></i> Consulta de Alquiler</a></li>
+                        <li class ="nav-item"><a href="RegistroAlquiler.html" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de Alquiler</a></li>
+                        <li class ="nav-item"><a href="RegistroAlquilerDevolucion.html" class="nav-link"><i class="fas fa-exchange-alt"></i>  Devolución de Alquiler</a></li>
+                        <li class ="nav-item"><a href="BusquedaAlquiler.html" class="nav-link"><i class="fas fa-search"></i> Búsqueda de 
+                        Alquiler</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">VISITAS</h5>
+                        <li class ="nav-item"><a href="ReporteSolicitudes.html" class="nav-link"><i class="far fa-list-alt"></i> Solicitudes de Visitas</a></li>
+                        <li class ="nav-item"><a href="RegistroVisita.html" class="nav-link"><i class="far fa-list-alt"></i> Actualización de Visitas</a></li>
+                    </ul>
+
+                    <!--
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">CATALOGO</h5>
+                        <li class ="nav-item"><a href="ConfiguracionCatalogo.html" class="nav-link"><i class="fas fa-tasks"></i>  Configuración</a></li>
+                        <li class ="nav-item"><a href="VisualizacionCatalogo.html" class="nav-link"><i class="fas fa-book-reader"></i>  Visualización</a></li>
+                        <li class ="nav-item"><a href="ReporteSolicitudes.html" class="nav-link"><i class="far fa-list-alt"></i> Reporte de Solicitudes</a></li>
+                    </ul>
+                    -->
+                
+                </nav>
+            </div>
+
+
+            <div class="col-md-10 align-items-center">
+
+                
+                   <div class="row pt-5 justify-content-center">
+
+                        <label for="nombres"><p class="TituloForm">Catálogo</p></label>
+                   </div> 
+
+                   <div class="row pt-2 justify-content-center">
+                        
+
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card1" style="width: 18rem;">
+                                    <img src="img/vestido_verde.jpeg"  height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido: A-1</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido de Gala
+                                            <br>Género: Femenino
+                                            <br>Evento: Coctel, Gala
+                                            <br>Disponibilidad: Alquiler
+                                            <br>Talla: S,M,L
+                                            <br>Color Principal: Verde
+                                            <br>Precio: $70000
+                                            <br>Medidas: 150 cm Alto, 70 cm Ancho
+                                            <br>Observaciones: Vestido para coteles
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    <!--    <div class="tarjeta2"> -->
+                            <div class="col-md-4">
+                                <div class="card2" style="width: 18rem;">
+                                    <img src="img/vestidomujermorado.jpeg" height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido: A-2</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido:Vertino de boda
+                                            <br>Género:Femenino 
+                                            <br>Evento: Formal
+                                            <br>Disponibilidad:Venta 
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal:Morado  
+                                            <br>Precio: $950000
+                                            <br>Medidas:172cm Alto, 60 cm Ancho
+                                            <br>Observaciones: Vestdio para toda ocacion
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+
+                            <div class="col-md-4">
+                                <div class="card3" style="width: 18rem;">
+                                    <img src="img/vestidomatr.jpeg" height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido: A-3</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: V Matrimonio
+                                            <br>Género: Femenino
+                                            <br>Evento: Matrimonio
+                                            <br>Disponibilidad: Venta
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Blanco
+                                            <br>Precio: $950000
+                                            <br>Medidas: 145 cm Alto, 65 cm Ancho
+                                            <br>Observaciones: Vestido de matrimonio
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card1" style="width: 18rem;">
+                                    <img src="img/trejehombreazul1.jpeg"  height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:B-1</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Traje Azul  
+                                            <br>Género: Hombre 
+                                            <br>Evento: Gala 
+                                            <br>Disponibilidad:
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: 
+                                            <br>Precio: $550000
+                                            <br>Medidas: 180 cm Alto, 70 cm de Ancho
+                                            <br>Observaciones:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card2" style="width: 18rem;">
+                                    <img src="img/vestidohombre.jpeg" height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:B-2</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido Matrimonio 
+                                            <br>Género: Masculino
+                                            <br>Evento: Coctel, Gala, Matrimonio
+                                            <br>Disponibilidad: Alquiler
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Azul
+                                            <br>Precio: $905000
+                                            <br>Medidas: 170 cm Alto, 70 cm Ancho
+                                            <br>Observaciones: Vestido con corbata negra</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card3" style="width: 18rem;">
+                                    <img src="img/trejehombreazul2.jpeg" height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:B-3</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido Gala
+                                            <br>Género: Hombre 
+                                            <br>Evento: Coctel, Matrimonio 
+                                            <br>Disponibilidad: NOventa  
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Azul 
+                                            <br>Precio: $95000
+                                            <br>Medidas: 166 cm Alto, 50 cm Ancho
+                                            <br>Observaciones:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card1" style="width: 18rem;">
+                                    <img src="img/vestidorojo.jpeg"  height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:A-4</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido Coctel
+                                            <br>Género: Femenino 
+                                            <br>Evento: Gala, Matrimonio, Coctel
+                                            <br>Disponibilidad: Venta 
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Rojo 
+                                            <br>Precio: $550000
+                                            <br>Medidas: 180 cm Alto, 68 cm de Ancho
+                                            <br>Observaciones:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card2" style="width: 18rem;">
+                                    <img src="img/vestidonatrimonio.jpeg" height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:A-5</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido Matrimonio 
+                                            <br>Género: Femenino 
+                                            <br>Evento: Matrimonio
+                                            <br>Disponibilidad: Venta 
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Blanco 
+                                            <br>Precio: $905000
+                                            <br>Medidas: 160 cm Alto, 70 cm Ancho
+                                            <br>Observaciones: Vestido con corbata negra</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card3" style="width: 18rem;">
+                                    <img src="img/vestidonegro.jpeg" height="300px"class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Referencia Vestido:A-6</h5>
+                                        <p class="card-text">
+                                            Nombre Vestido: Vestido Gala
+                                            <br>Género: Femenino 
+                                            <br>Evento: Coctel, Matrimonio 
+                                            <br>Disponibilidad: NOventa  
+                                            <br>Talla: S,M,L,XL
+                                            <br>Color Principal: Negro 
+                                            <br>Precio: $95000
+                                            <br>Medidas: 166 cm Alto, 50 cm Ancho
+                                            <br>Observaciones:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   </div>  
+
+            </div>
+       </div>
+     </div>
+   </div>
+                
+
+
+
+ <Script src="bootstrap-4.6.1-dist/js/jquery.slim.min.js"></Script>
+    <Script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></Script>
+
+</body>
+
+<div class="piepagina">
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4 text-dark">
+
+
+  <!-- Footer Text -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">Contacto</h5>
+            <p>
+                <ul class="list-unstyled mb-0 font-weight-bold">
+                    <li><i class="fas fa-map-marker-alt"></i>  Cra 24#17-45 2do Piso, Bogotá D.C.</li>
+                    <li><i class="fas fa-address-book"></i>  Carolina Umaña - 300 6556858</li>
+                    <li><i class="fas fa-address-book"></i>  David Castro - 350 2246584</li>
+                    <li><i class="fas fa-address-book"></i>  Gabriel Pedraza - 320 2451954</li>
+                    <li><i class="fas fa-address-book"></i>  Kevin Gutierrez - 320 4207547</li>
+                </ul>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-6 mb-md-0 mb-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">ENCUENTRANOS EN...</h5>
+            <p>
+                <ul class="list-unstyled mb-0 font-weight-bold">    
+                    <li><a href="#" class=""><i class="fab fa-facebook"></i>  @DangelsArtemisa</a></li>
+                    <li><a href="#" class=""><i class="fab fa-instagram"></i>  @DangelsPhotos</a></li>
+                 </ul> 
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Text -->
+      <!-- Copyright -->
+      <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="/"> MDBootstrap.com</a>
+      </div> -->
+      <!-- Copyright -->
+</div>  
+</footer>
+<!-- Footer -->
+
+</html>
+
+                             
+
+
+                      
+
+
+             
+
+

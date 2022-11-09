@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="css/Style.css"></link>
+    <link rel="stylesheet" href="iconos/css/all.css"></link>
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"></link>
+
+<title>Insert title here</title>
+</head>
+<body>
+<header>   
+   
+    <div class="container-fluid"> 
+
+         <!-- primera fila -->
+        <div class="row nav  ">
+        	<div class="col">
+        		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+        			<a class="navbar-brand TituloNav" href="#">
+                        <img src="img/LOGOARTEMISA SYSTEM.jpeg" width="120" height="70" alt=""></img>
+                    </a>
+        				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#BarraNaveg" aria-controls="BarraNaveg" aria-expanded="false" aria-label="Toggle navigation">
+        						<span class="navbar-toggler-icon"></span>
+        						
+        				</button>
+                        <div class="collapse navbar-collapse justify-content-end" id="BarraNaveg">
+                            <ul class ="navbar-nav mx-lb">
+                             <li class="nav-item active">
+                          
+                                   <a class="nav-link text-dark"  data-toggle="modal" data-target="#NuevoUsuarioModal" data-whatever="@getbootstrap" href="Registro_usuario.xhtml"><i class="fas fa-user-plus"></i>  Crear Nuevo</a> 
+
+                              </li>
+
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="Index.html"><i class="fas fa-sign-out-alt"></i>  Cerrar Sesión</a>
+                              </li>
+                            </ul>
+                        </div>
+                 </nav>
+            </div>
+        </div>
+    </div>
+ </header> 
+ 
+ 
+ 
+         <!-- fila2, dos col. izq=barra vert, derechcontenido-->
+ <div class="container-fluid"> 
+      <div class="fondo">
+
+        <div class="row justify-content-center">
+            <div class="col-md-2" >
+
+                <nav class="navbar d-md-block collapse navbar-dark " id="menu">
+                    <div class="rol pt-4 " align="center">
+                        <img id="avatarfem" src="img/avatarfem.jpg" class= "...." alt="rol admin"></img>
+                        <p class="text-white"><b class="colorsubt">Carolina Umaña</b><br>Administrador</br></p>
+                    </div>
+
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">INVENTARIO</h5>
+                         <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-list-alt"></i> Lista de vestidos</a></li>
+                         <li class="nav-item"><a href="Productos.xhtml" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de vestidos</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i> Busqueda de Vestido</a></li>
+                    </ul>
+
+                    <ul class ="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">VENTAS</h5>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="far fa-list-alt"></i> Consulta de venta</a></li>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de ventas</a></li>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i> Busqueda de venta</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav pb-3 pt-2">
+                        <h5 class="colorsubt subtil">ALQUILER</h5>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="far fa-list-alt"></i> Consulta de alquiler</a></li>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="fas fa-plus-square"></i>  Registro de alquiler</a></li>
+                        <li class ="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i> Busqueda de alquiler</a></li>
+                    </ul>
+
+                    
+         
+                
+                </nav>
+            </div>
+
+
+       </div>
+     </div>
+   </div>
+          
+</body>
+</html>

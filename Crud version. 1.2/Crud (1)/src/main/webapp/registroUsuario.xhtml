@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>Registrar Usuario</title>
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+		crossorigin="anonymous"></link>
+</h:head>
+<h:body>
+	<br></br>
+	<h1>Registrar Usuario</h1>
+	<br></br>
+	<h:form class="form-horizontal">
+		<div class="form-group">
+			<h:outputText value="Documento Usuario"
+				class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:inputText value="#{usuarioBean.usuario.docUsuario}"
+					class="form-control"></h:inputText>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:outputText value="Nombre Usuario" class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:inputText value="#{usuarioBean.usuario.nombreUsuario}" class="form-control"></h:inputText>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:outputText value="Email Usuario" class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:inputText value="#{usuarioBean.usuario.emailUsuario}" class="form-control"></h:inputText>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:outputText value="Contraseña Usuario"
+				class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:inputText value="#{usuarioBean.usuario.contraseña}" class="form-control"></h:inputText>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:outputText value="Estado Usuario" class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:inputText value="#{usuarioBean.usuario.estadoUsuario}" class="form-control"></h:inputText>
+			</div>
+		</div>
+
+		<!--  
+		
+		
+		<h:outputText value="Fecha Creado"></h:outputText>
+		<h:inputText value="#{usuarioBean.usuario.created_at}" type="date"> <f:convertDateTime pattern="yyyy-MM-dd"/>  </h:inputText><br/>
+
+		<h:outputText value="Fecha Actualizado"></h:outputText>
+		<h:inputText value="#{usuarioBean.usuario.updated_at}"></h:inputText><br/>
+		-->
+		<div class="form-group">
+			<h:outputText value="Rol" class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:selectOneMenu id="rol" value="#{usuarioBean.rol.idRol}" class="form-control">
+					<f:selectItems value="#{usuarioBean.listaRol}" var="Roles"
+						itemValue="#{Roles.idRol}" itemLabel="#{Roles.name}" />
+				</h:selectOneMenu>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:outputText value="Tipo Documento" class="col-md-4 control-label"></h:outputText>
+			<div class="col-md-5">
+				<h:selectOneMenu id="tipodocumento"
+					value="#{usuarioBean.tipo_doc.idDoc}" class="form-control">
+					<f:selectItems value="#{usuarioBean.listaTipDoc}" var="TipoDocs"
+						itemValue="#{TipoDocs.idDoc}" itemLabel="#{TipoDocs.tipoDoc}" />
+				</h:selectOneMenu>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<h:commandButton value="Crear Usuario"
+				action="#{usuarioBean.crear()}" class="btn btn-success"></h:commandButton>
+		</div>
+	</h:form>
+			
+	
+	
+	       <!-- jQuery, Popper.js, Bootstrap JS -->
+       <script src="jquery/jquery-3.3.1.min.js"></script>
+       <script src="popper/popper.min.js"></script>
+       <script src="bootstrap/js/bootstrap.min.js"></script>
+       
+        <!-- datatables JS -->
+ <script type="text/javascript" src="datatables/datatables.min.js"></script>
+	<!-- Botones -->
+<script src="datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>  
+<script src="datatables/JSZip-2.5.0/jszip.min.js"></script>    
+<script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>    
+<script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+<script src="datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>  
+
+ <!-- <Script src="bootstrap-4.6.1-dist/js/jquery.slim.min.js"></Script>
+    <Script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></Script> -->
+
+    <script type="text/javascript" src="main.js"></script>  
+</h:body>
+
+</html>
